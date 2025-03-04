@@ -1,0 +1,84 @@
+* ::selection{
+  background-color: #265550;
+  color: #c8e9ec;
+}
+
+*{
+  font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+}
+
+.hov{
+  text-decoration: none !important;
+}
+.hov:hover{
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #a5e5df;
+}
+*{
+  font-family: "Roboto", serif;
+}
+#main{
+  background-image: url(./accessts/imag/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 110vh;
+}
+#lmain{
+  background-image: url(./accessts/imag/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 110vh;
+}
+input{
+  background-color: rgba(255, 255, 255, 0.116);
+}
+label{
+  transition: 0.3s ease-in-out;
+  padding: 0 5px;
+}
+.input-container.active label {
+  top: -8px !important;
+  font-size: 14px;
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 20px;
+  color: #134D4A;
+  left: 18px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  background-color: #ffffff00 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+button{
+  transition: .7s box-shadow !important;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: inset 5px 5px 30px 10px #032e2c;
+  color: #a5e5df;
+}
+form .p{
+  text-decoration: underline;
+  color: #c6f4f8;
+}
+.password:hover .toggle-icon,
+.password input:focus + .toggle-icon {
+    display: block;
+}

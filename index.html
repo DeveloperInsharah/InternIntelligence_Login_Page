@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="./accessts/imag/favi.png" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="register.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main" class="block max-[948px]:flex max-[948px]:justify-center">
+        <div  id="signUpMessage" data-aos="zoom-in-right" class="messageDiv text-black border-2 border-[#2B6943] absolute hidden bg-white px-5 py-3 left-[50%] -translate-x-[50%] z-99 mt-5"></div>
+        <div id="page" class="backdrop-blur-lg ml-[10%] w-[40%] max-[948px]:w-[60%] max-[948px]:ml-[0%] max-[604px]:w-[80%] h-[100vh] max-[440px]:p-5 max-[380px]:w-[98%] min-[600px]:h-[100vh] flex flex-col justify-center">&nbsp;
+            <h1 class="text-6xl text-white text-center font-semibold mt-[20px] max-[474px]:text-4xl">Create Your Account</h1>
+            <form action="" class="w-[90%] mx-auto gap-[20px] flex flex-col gap-[20px] mt-[30px]">
+                <div class="input-container fname w-full h-[50px] mx-auto relative">
+                    <label for="fname" class="absolute left-[30px] top-[15px] text-white font-semibold">First Name</label>
+                    <input id="fname" type="text" class="px-[25px] w-full h-full border-1 text-[.9rem] rounded-full border-white focus:border-2 focus:border-white focus:outline-none">
+                </div>
+                <div class="input-container lname w-full h-[50px] mx-auto relative">
+                    <label for="lname" class="absolute left-[30px] top-[15px] text-white font-semibold">Last Name</label>
+                    <input id="lname" type="text" class="px-[25px] w-full h-full border-1 text-[.9rem] rounded-full border-white focus:border-2 focus:border-white focus:outline-none">
+                </div>
+                <div class="input-container email w-full h-[50px] mx-auto relative">
+                    <label for="email" class="absolute left-[30px] top-[15px] text-white font-semibold">Email</label>
+                    <input id="email" type="email" class="px-[25px] w-full h-full border-1 text-[.9rem] rounded-full border-white focus:border-2 focus:border-white focus:outline-none">
+                </div>
+                <div class="input-container password w-full h-[50px] mx-auto relative">
+                    <label for="password" class="absolute left-[30px] top-[15px] text-white font-semibold">Password</label>
+                    <input id="password" onfocus="PasswordValidation()" oninput="PasswordValidation()" type="password" class="px-[25px] w-full h-full  border-1 text-[.9rem] rounded-full border-white focus:border-2 focus:border-white focus:outline-none">
+                    <span class="toggle-icon absolute right-[15px] top-3 cursor-pointer hidden" onclick="togglePassword()">👁️</span>
+                    <p id="error" class="text-red-500 text-[.8rem] ms-5 mt-1 hidden">Password must be 6 digits</p>
+                </div>
+                <div class="login flex justify-end gap-[7%] px-5 items-center max-[301px]:flex-col max-[301px]:gap-5">
+                    <p class="text-[.9rem] p text-white max-[301px]:self-start">Already Have An Account?</p>
+                    <button class="px-6 py-2 bg-[#134D4A] rounded-lg text-white text-[.9rem] font-semibold max-[301px]:self-end"><a href="./accessts/login.html">Login</a></button>
+                </div>
+                <button id="submit" class="w-full h-[45px] bg-[#134D4A] rounded-full text-white cursor-pointer font-semibold text-xl">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="app.js"></script>
+</body>
+</html>
